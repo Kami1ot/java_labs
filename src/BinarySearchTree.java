@@ -1,3 +1,6 @@
+
+//Напишите программную реализацию бинарного дерева поиска.
+
 class BinarySearchTree {
 
     static class Node {

@@ -4,6 +4,9 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+//Напишите программу, которая по дате определяет день недели, на который эта дата
+//приходится.
+
 public class Main_9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

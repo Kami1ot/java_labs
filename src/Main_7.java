@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
+//
+//Напишите программу, которая будет выводить в консоль введённое слово 6 раз и
+//сохранять в MySQL/PostgreSQL.
 
 public class Main_7 {
     public static void main(String[] args) throws SQLException {

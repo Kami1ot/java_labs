@@ -1,6 +1,11 @@
 import java.util.Arrays;
 import java.util.Random;
 
+//28. Создать класс Matrix для работы с двумерными матрицами. Создать методы для
+//генерации нулевой матрицы, а также для генерации матрицы со случайными величинами –
+//применить Math.random(). Реализовать метод сложения матриц.
+
+
 public class P_Main_28 {
     private final int rows; // Количество строк
     private final int cols; // Количество столбцов

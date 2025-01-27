@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+
+//Разработайте программу, реализующую рекурсивное вычисление факториала.
+
 public class Main_12 {
     public static long factorial(int n) {
         if (n == 0 || n == 1) {

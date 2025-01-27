@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-
+//11. Напишите программу, в которой из строки "I have 3 cats, 4 dogs, and 1 turtle"
+//отбираются цифры. Из этих цифр формируется массив.
 
 public class Main_2 {
     public static void main(String[] args) {

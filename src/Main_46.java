@@ -3,6 +3,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+//
+//46. Написать приложение для сложения, вычитания, умножения, деления, возведения в
+//степень логарифмов. Программа должна выполнять ввод данных, проверку правильности
+//        введенных данных, выдачу сообщений в случае ошибок. Результат выводится на экран и
+//записывается в файл
+
 public class Main_46 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

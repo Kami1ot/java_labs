@@ -7,10 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="log4j-core-2.24.3" level="project" />
     <orderEntry type="library" name="poi-5.2.3" level="project" />
     <orderEntry type="library" name="mysql-connector-j-9.2.01" level="project" />
     <orderEntry type="library" name="mysql-connector-j-9.2.0" level="project" />
-    <orderEntry type="library" name="xmlgraphics-commons-2.6" level="project" />
+    <orderEntry type="library" name="batik-anim-1.14" level="project" />
+    <orderEntry type="library" name="log4j-core-2.24.3" level="project" />
   </component>
 </module>
