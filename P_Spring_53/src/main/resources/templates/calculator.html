@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Калькулятор</title>
+    <!-- Подключение Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Калькулятор</h1>
+
+    <!-- Форма -->
+    <form action="/" method="post" class="card p-4 shadow">
+        <div class="mb-3">
+            <label for="operand1" class="form-label">Число 1:</label>
+            <input type="number" id="operand1" name="operand1" step="0.01" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="operand2" class="form-label">Число 2:</label>
+            <input type="number" id="operand2" name="operand2" step="0.01" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="operation" class="form-label">Операция:</label>
+            <select id="operation" name="operation" class="form-select" required>
+                <option value="+">Сложение</option>
+                <option value="-">Вычитание</option>
+                <option value="*">Умножение</option>
+                <option value="/">Деление</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Вычислить</button>
+    </form>
+
+    <!-- Результат -->
+    <div class="mt-4">
+        <h2>Результат</h2>
+        <p th:if="${calculation != null}" th:text="'Результат: ' + ${calculation.operand1} + ' ' + ${calculation.operation} + ' ' + ${calculation.operand2} + ' = ' + ${calculation.result}"
+           class="alert alert-success"></p>
+        <p th:if="${error != null}" th:text="${error}" class="alert alert-danger"></p>
+    </div>
+
+    <!-- История -->
+    <div class="mt-4">
+        <h2>История операций</h2>
+        <ul class="list-group">
+            <li th:each="calc : ${history}"
+                th:text="${calc.operand1} + ' ' + ${calc.operation} + ' ' + ${calc.operand2} + ' = ' + ${calc.result}"
+                class="list-group-item"></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Подключение Bootstrap JavaScript (если требуется) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
